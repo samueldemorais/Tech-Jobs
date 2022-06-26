@@ -26,7 +26,7 @@ export default function OffCanvas() {
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#offcanvasRight" 
                 aria-controls="offcanvasRight" 
-                style={{border:"1px solid #4682B4", backgroundColor:"#4682B4", color:"white", position:"absolute", left:"10px", top:"150px"}}
+                style={{border:"1px solid #4682B4", backgroundColor:"#4682B4", color:"white"}}
                 onClick={handleShow}
             >
             Adicionar vaga
@@ -76,7 +76,7 @@ export default function OffCanvas() {
                 
                 <div className="d-grid gap-2 d-md-block my-3 float-end">
                 <button className="btn btn-secondary" type="close" data-bs-dismiss="offcanvas" >Fechar</button>
-                <button className="btn btn-info" type="submit" style={{border:"1px solid", backgroundColor:"#4682B4"}}>Enviar</button>
+                <button className="btn btn-info" type="button" style={{border:"1px solid", backgroundColor:"#4682B4"}}>Enviar</button>
                 </div>
             </form>
             </div>

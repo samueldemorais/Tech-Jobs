@@ -1,85 +1,94 @@
 {
     "jobs": [
         {
+            "id": "1",
             "img": "https://www.tshirtgeek.com.br/wp-content/uploads/2021/03/com001.jpg",
             "title": "Python developer",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Phoebus",
-            "salario": 1000.0
+            "salario": "R$ 1000,00"
         }, 
         {
+            "id": "2",
             "img": "https://alonza.com.br/wp-content/uploads/2021/07/react-native.png",
             "title": "Dev React",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Dock",
-            "salario": 13000.0
+            "salario": "R$ 13.000,00"
         },
         {
+            "id": "3",
             "img": "https://www.apptuts.net/wp-content/uploads/2019/09/destaque-4.jpg",
             "title": "Tech Lead iOS",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Invillia",
-            "salario": 14000.0
+            "salario": "R$ 14.000,00"
         },
         {
+            "id": "4",
             "img": "https://www.palpitedigital.com/y/4513/java-e1561385686305.jpeg",
             "title": "Dev full Java",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Tivity",
-            "salario": 12000.0
+            "salario": "R$ 12.000,00"
         },
         {
+            "id": "5",
             "img": "https://images.ctfassets.net/23aumh6u8s0i/5qsAo7jIYvClWYLYPFaMPS/d1ef0c663cda250b166218ed66bfe4a4/NET.png",
             "title": "Dev .Net Senior",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Conpay",
-            "salario": 6000.0
+            "salario": "R$ 6.000,00"
         },
         {
+            "id": "6",
             "img": "https://www.primesoft.com.br/wp-content/uploads/2016/06/qualidade-teste-software.jpg",
             "title": "Analista QA Tester",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "TOTVS",
-            "salario": 4000.0
+            "salario": "R$ 4.000,00"
         },
         {
+            "id": "7",
             "img": "https://media-exp1.licdn.com/dms/image/C4D0BAQEytSovCGl2EQ/company-logo_200_200/0/1591129639741?e=2147483647&v=beta&t=KfEglrrKc99cZMluQasRum8lMtlN-USyIinFqIzbjII",
             "title": "Especialista Clould",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Google",
-            "salario": 6000.0
+            "salario": "R$ 6.000,00"
         },
         {
+            "id": "8",
             "img": "https://www.palpitedigital.com/y/4513/java-e1561385686305.jpeg",
             "title": "Arquiteto JAVA",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Brasoftware",
-            "salario": 19000.0
+            "salario": "R$ 19.000,00"
         },
         {
+            "id": "9",
             "img": "https://www.datocms-assets.com/14946/1633281680-ux-vs-ui-cover-edited.png?auto=format",
             "title": "UI/UX Designer",
             "requisito1": "Conhecimento em banco de dados (preferencialmente PostgreSQL);",
             "requisito2": "Conhecimento em metodologias ágeis;",
             "requisito3": "Experiência em framework Javascript (preferencialmente React JS).",
             "empresa": "Algar",
-            "salario": 17000.0
+            "salario": "R$ 17.000,00"
         }
     ]
 }
