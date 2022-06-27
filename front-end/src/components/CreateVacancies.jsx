@@ -1,7 +1,10 @@
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 export default ({ card }) => {
+  
+   
+   
     return (
         <div
             className="col p-5"
@@ -12,7 +15,7 @@ export default ({ card }) => {
             }}
         >
             <Link
-                to="/teste"
+                to={`/${card.id}`}
                 style={{ textDecoration: "none", color: "#000" }}
             >
                 <div

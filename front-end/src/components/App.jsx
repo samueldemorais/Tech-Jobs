@@ -23,7 +23,7 @@ function App() {
     console.log(data);
 
     return (
-            <div className="App" style={{ background: "#ddd", paddingTop: "25px" }}>
+            <div className="App" style={{ background: "#ddd", paddingTop: "25px", minHeight:"100vh" }}>
                 
 
                 

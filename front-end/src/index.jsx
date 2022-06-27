@@ -15,8 +15,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <Router>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container">
+            <nav className="navbar navbar-dark bg-dark">
+                <div className="container">
                     <h1
                         className="text-center"
                         style={{ color: "#FFFFFF" }}
@@ -27,7 +27,7 @@ root.render(
             </nav>
             <Routes>
                 <Route exact path="/" element={<App />} />
-                <Route exact path="/teste" element={<CardView />} />
+                <Route exact path="/:id" element={<CardView />} />
             </Routes>
         </Router>
     </React.StrictMode>
