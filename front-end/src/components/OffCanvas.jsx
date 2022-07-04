@@ -2,19 +2,18 @@ import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useRef } from 'react';
 import {Offcanvas} from "bootstrap";
+import { useForm } from "react-hook-form";
+import { ErrorMessage } from "@hookform/error-message";
 
 export default function OffCanvas() {
     const offCanvasRef = useRef(null); 
+    const { register, handleSubmit, errors } = useForm();
+    const onSubmit = (data) => console.log(data);
 
     const handleShow = () => {
         const offcanvas = new Offcanvas(offCanvasRef);
         offcanvas.show();
     }; 
-
-    // const handleHide = () => {
-    //     const offcanvas = new bootstrap.Offcanvas(offCanvasRef);
-    //     offcanvas.hide();
-    // }; 
 
 
     return (
@@ -45,14 +44,16 @@ export default function OffCanvas() {
             aria-labelledby="offcanvasRightLabel">
             
             <div className="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Adiciona uma História Contada do seu jeito!</h5>
+            <h5 id="offcanvasRightLabel">Cadastrar vaga</h5>
             
             </div>
             <div className="offcanvas-body">
-            <form>
+            <form onSubmit = { handleSubmit(onSubmit) }>
                 <div className="mb-3">
-                    <label htmlFor="exampleFormControlInput1" className="form-label">Título:</label>
-                    <input type="text" className="form-control" id="titleArea" />
+                    <label htmlFor="exampleFormControlInput1" className="form-label">Título:</label> 
+                    <input type="text" className="form-control" id="titleArea" nome="tituloarea" {...register('tituloarea', {required: "O campo precisa ter no máximo 20 caracteres.", maxLength: 20 }) } />
+                    {/* <ErrorMessage errors = { errors } name="tituloarea" /> */}
+
                     
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">Requisito 1:</label>
                     <textarea className="form-control" id="synopsisArea" rows="3" maxLength="141"></textarea>
@@ -67,7 +68,9 @@ export default function OffCanvas() {
                     <input type="text" className="form-control" id="titleArea" />
                     
                     <label htmlFor="exampleFormControlInput1" className="form-label">Faixa salarial:</label>
-                    <input type="text" className="form-control" id="authorArea" />
+                    <input type="text" className="form-control" id="authorArea" name="salario"{...register('salario', {min: 1000, max: 100000000, required: "salário entre 1000 e 100000000"})}/>
+                    {/* <ErrorMessage errors = { errors } name="slario" /> */}
+          
                     
                     <label htmlFor="imgArea" className="form-label">Imagem</label>
                     <input type="text" className="form-control" id="imgArea" 
@@ -76,7 +79,7 @@ export default function OffCanvas() {
                 
                 <div className="d-grid gap-2 d-md-block my-3 float-end">
                 <button className="btn btn-secondary" type="close" data-bs-dismiss="offcanvas" >Fechar</button>
-                <button className="btn btn-info" type="button" style={{border:"1px solid", backgroundColor:"#4682B4"}}>Enviar</button>
+                <button className="btn btn-info" type="submit" style={{border:"1px solid", backgroundColor:"#4682B4"}}>Enviar</button>
                 </div>
             </form>
             </div>
